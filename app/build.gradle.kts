@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.googleServices)
+    alias(libs.plugins.google.dagger.hilt.android)
+    alias(libs.plugins.google.devtools.ksp)
 }
 
 android {
@@ -58,6 +60,38 @@ dependencies {
     //firebase auth and firestore
     implementation (libs.firebase.auth.ktx)
     implementation (libs.firebase.firestore.ktx)
+
+    //Dagger - Hilt
+    implementation (libs.hilt.android.v239)
+
+    // Dagger - Hilt
+    ksp(libs.hilt.android.compiler)
+    ksp(libs.androidx.hilt.compiler)
+    implementation (libs.androidx.hilt.navigation.compose)
+
+    //material icons - use with caution!
+    implementation (libs.androidx.material.icons.extended)
+
+    // Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.coroutines.play.services)
+
+    // Coroutine Lifecycle Scopes
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+    implementation (libs.androidx.lifecycle.runtime.ktx.v240)
+
+    //Coil
+    implementation(libs.coil.compose)
+
+    //Retrofit
+    implementation (libs.retrofit)
+
+    //GSON converter
+    implementation (libs.converter.gson)
+
+    // OkHttp
+    implementation(libs.okhttp)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
