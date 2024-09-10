@@ -6,6 +6,13 @@
 - Saving a user to firestore DB.
 
 
+### Home Screen
+- Section for custom AppBar.
+- Floating Action Button.
+- Title Section containing name which is fetched from firebase.
+- in Title section a list for user which is being read.
+- Reading list where collection of books is visivle in a Horrizontal scroll.
+
 
 
 ### Screenprints
@@ -27,6 +34,15 @@ Splashscreen:-                                Sign In Screen :-                 
 
 
 <img width="150" alt="Pasted Graphic 1" src="https://github.com/user-attachments/assets/de527722-8049-43a3-9c01-d8a40c2466bd">
+
+
+
+HomeScreen :-
+
+
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/8653f6bf-20e5-48fd-96e8-80221ed8f8bd">
+
 
 
 
