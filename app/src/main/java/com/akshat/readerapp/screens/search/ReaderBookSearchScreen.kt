@@ -25,6 +25,7 @@ import coil.compose.rememberImagePainter
 import com.akshat.readerapp.components.InputField
 import com.akshat.readerapp.components.ReaderAppBar
 import com.akshat.readerapp.model.Item
+import com.akshat.readerapp.navigation.ReaderScreens
 
 @Composable
 fun ReaderSearchScreen(
@@ -101,7 +102,9 @@ fun BookRow(
 ) {
 
     Card(modifier = Modifier
-        .clickable { }
+        .clickable {
+            navController.navigate(ReaderScreens.DetailScreen.name + "/${book.id}")
+        }
         .fillMaxWidth()
         .height(100.dp)
         .padding(3.dp),
