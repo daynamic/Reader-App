@@ -1,6 +1,7 @@
 package com.akshat.readerapp.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -8,6 +9,7 @@ import com.akshat.readerapp.screens.ReaderSplashScreen
 import com.akshat.readerapp.screens.details.BookDetailsScreen
 import com.akshat.readerapp.screens.home.ReaderHomeScreen
 import com.akshat.readerapp.screens.login.ReaderLoginScreen
+import com.akshat.readerapp.screens.search.BookSearchViewModel
 import com.akshat.readerapp.screens.search.ReaderSearchScreen
 import com.akshat.readerapp.screens.stats.ReaderStatsScreen
 import com.akshat.readerapp.screens.update.BookUpdateScreen
@@ -34,7 +36,8 @@ fun ReaderNavigation() {
         }
 
         composable(ReaderScreens.SearchScreen.name){
-            ReaderSearchScreen(navController = navController)
+            val viewModel = hiltViewModel<BookSearchViewModel>()
+            ReaderSearchScreen(navController = navController,viewModel)
         }
 
         composable(ReaderScreens.DetailScreen.name){

@@ -74,7 +74,7 @@ fun ReaderHomeScreen(navController: NavHostController) {
         ReaderAppBar(title = "Reader App", navController = navController)
     }, floatingActionButton = {
         FABContent {
-
+            navController.navigate(ReaderScreens.SearchScreen.name)
         }
     }) {
         Surface(
