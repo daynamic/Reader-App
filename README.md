@@ -27,6 +27,7 @@
 - Details Screen is preseneted.
 - Here learned about produce state where we can by pass creating corutine.
 - display various details about previous selection.
+- on click of save button book is added to logged in user in Firestore database.
 
 
 ### Screenprints
