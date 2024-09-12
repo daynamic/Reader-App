@@ -22,6 +22,12 @@
 - If the entered text has some books then it will be cleared off else the text will remain in edittext.
 
 
+### Details Screen
+- For our search on previous screen when we click on a particular item.
+- Details Screen is preseneted.
+- Here learned about produce state where we can by pass creating corutine.
+- display various details about previous selection.
+
 
 ### Screenprints
 
@@ -61,6 +67,14 @@ Search Screen :-
 
 
 <img width="150" alt="image" src="https://github.com/user-attachments/assets/bde811f6-bf2d-4284-807c-8c7451d434b5">
+
+
+
+Details Screen :-
+
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/63dc2f6b-a4a9-4c08-ab32-4d38f390874e">
+
 
 
 
