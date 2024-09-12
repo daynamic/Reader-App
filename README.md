@@ -14,6 +14,14 @@
 - Reading list where collection of books is visivle in a Horrizontal scroll.
 
 
+### Search Screen
+- Section for custom AppBar for Search screen.
+- By default there will be android books selected.
+- From the Editext user would be able to search for a different book.
+- Retrofit is used for networking and Coil has been used to load data.
+- If the entered text has some books then it will be cleared off else the text will remain in edittext.
+
+
 
 ### Screenprints
 
@@ -42,6 +50,19 @@ HomeScreen :-
 
 
 <img width="150" alt="image" src="https://github.com/user-attachments/assets/8653f6bf-20e5-48fd-96e8-80221ed8f8bd">
+
+
+Search Screen :-
+
+
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/83bb224f-fd3c-4cd1-be1c-852cd76c4183">
+
+
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/bde811f6-bf2d-4284-807c-8c7451d434b5">
+
+
 
 
 
