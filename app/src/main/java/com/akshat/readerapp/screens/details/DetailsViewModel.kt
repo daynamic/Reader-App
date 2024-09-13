@@ -1,7 +1,6 @@
 package com.akshat.readerapp.screens.details
 
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.akshat.readerapp.data.Resource
 import com.akshat.readerapp.model.Item
 import com.akshat.readerapp.repository.BookRepository

@@ -22,8 +22,7 @@ import androidx.core.text.HtmlCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import coil.compose.rememberImagePainter
-import com.akshat.readerapp.components.ReaderAppBar
-import com.akshat.readerapp.components.RoundedButton
+import com.akshat.readerapp.components.*
 import com.akshat.readerapp.data.Resource
 import com.akshat.readerapp.model.Item
 import com.akshat.readerapp.model.MBook
@@ -156,7 +155,6 @@ fun ShowBookDetails(
         modifier = Modifier.padding(top = 6.dp), horizontalArrangement = Arrangement.SpaceAround
     ) {
         RoundedButton(label = "Save") {
-            //save this book to the firestore database
             val book = MBook(
                 title = bookData.title,
                 authors = bookData.authors.toString(),

@@ -9,6 +9,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.akshat.readerapp.screens.ReaderSplashScreen
 import com.akshat.readerapp.screens.details.BookDetailsScreen
+import com.akshat.readerapp.screens.home.HomeScreenViewModel
 import com.akshat.readerapp.screens.home.ReaderHomeScreen
 import com.akshat.readerapp.screens.login.ReaderLoginScreen
 import com.akshat.readerapp.screens.search.BookSearchViewModel
@@ -34,7 +35,8 @@ fun ReaderNavigation() {
         }
 
         composable(ReaderScreens.ReaderHomeScreen.name){
-            ReaderHomeScreen(navController = navController)
+            val homeScreenViewModel = hiltViewModel<HomeScreenViewModel>()
+            ReaderHomeScreen(navController = navController, viewModel = homeScreenViewModel)
         }
 
         composable(ReaderScreens.SearchScreen.name){
@@ -42,9 +44,15 @@ fun ReaderNavigation() {
             ReaderSearchScreen(navController = navController,viewModel)
         }
 
-        composable(ReaderScreens.UpdateScreen.name){
-
-            BookUpdateScreen(navController = navController)
+        val updateName = ReaderScreens.UpdateScreen.name
+        composable("$updateName/{bookItemId}",
+            arguments = listOf(navArgument("bookItemId"){
+                type = NavType.StringType
+            })
+        ){navBackStackEntry ->
+            navBackStackEntry.arguments?.getString("bookItemId").let {
+                BookUpdateScreen(navController = navController, bookItemId = it.toString())
+            }
         }
 
         val detailName = ReaderScreens.DetailScreen.name
