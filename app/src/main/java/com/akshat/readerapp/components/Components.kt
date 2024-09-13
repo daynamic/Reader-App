@@ -1,7 +1,6 @@
 package com.akshat.readerapp.components
 
 import android.content.Context
-import android.graphics.drawable.Icon
 import android.view.MotionEvent
 import android.widget.Toast
 import androidx.compose.animation.core.Spring
@@ -66,7 +65,6 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -360,7 +358,7 @@ fun ListCard(
                     )
 
                     //  BookRating(score = book.rating!!)
-                    BookRating(score = 4.5)
+                    BookRating(score = book.rating!!)
                 }
             }
 
@@ -432,7 +430,6 @@ fun RoundedButton(
 
 }
 
-//Rating Bar
 @ExperimentalComposeUiApi
 @Composable
 fun RatingBar(
