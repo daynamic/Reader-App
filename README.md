@@ -30,6 +30,16 @@
 - on click of save button book is added to logged in user in Firestore database.
 
 
+
+### Update Screen
+- From our home screen now we can select a book from Reading List.
+- When enetered in update screen we can update the status of book to Start reading or mark as completed.
+- Additonally we can enter our thoughts about the book and give them start rating accordingly.
+- Depending upon we can update the status or delete the book from our library.
+- If user clicked on delete an alert dialog will be shown to user to rethink.
+- Under the hood we are updating the data base of FirebaseFirestore and making changes to it.
+
+
 ### Screenprints
 
 Splashscreen:-                                Sign In Screen :-                            Sign Up screen :-
@@ -75,6 +85,21 @@ Details Screen :-
 
 
 <img width="150" alt="image" src="https://github.com/user-attachments/assets/63dc2f6b-a4a9-4c08-ab32-4d38f390874e">
+
+
+
+Update Screen :-
+
+
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/6e952b00-a9e5-414b-b465-967d056e93db">
+
+
+
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/d7925ebc-e795-4e2f-9d05-17574cb109e4">
+
+
 
 
 
