@@ -40,6 +40,10 @@
 - Under the hood we are updating the data base of FirebaseFirestore and making changes to it.
 
 
+### Stats Screen :-
+- Here we pulled out Stats from Firebase and shwon.
+
+
 ### Screenprints
 
 Splashscreen:-                                Sign In Screen :-                            Sign Up screen :-
@@ -98,6 +102,16 @@ Update Screen :-
 
 
 <img width="150" alt="image" src="https://github.com/user-attachments/assets/d7925ebc-e795-4e2f-9d05-17574cb109e4">
+
+
+
+
+Stats Screen:-
+
+
+
+<img width="150" alt="image" src="https://github.com/user-attachments/assets/9e61b558-d994-4f5f-b070-4cac11f13a34">
+
 
 
 
